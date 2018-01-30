@@ -8,7 +8,6 @@ class TrackSerializer(serializers.ModelSerializer):
     class Meta:
         model = Track
         fields = ('id', 'order', 'title', 'duration', 'album')
-        read_only_fields = ('album',)
 
 
 class AlbumSerializer(WritableNestedModelSerializer):
